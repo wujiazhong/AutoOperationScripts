@@ -1,0 +1,16 @@
+# git clone git@github.com:ibmpredictiveanalytics/test.git
+# upload an asset release id = 2309851
+#curl -v "https://uploads.github.com/repos/ibmpredictiveanalytics/test/releases/2309851/assets?name=files.zip&access_token=TOKEN" -X POST -H "Content-Type:application/zip" -T ./files.zip
+
+# get all releases information from Github
+#curl -vi https://api.github.com/repos/ibmpredictiveanalytics/test/releases?access_token=TOKEN -X GET 
+#curl -vi https://api.github.com/repos/ibmpredictiveanalytics/CFA/releases/latest?access_token=TOKEN -X GET 
+
+# delete a release id = 2309851
+#curl -vi "https://api.github.com/repos/ibmpredictiveanalytics/test/releases/2336670?access_token=TOKEN" -X DELETE
+#git push origin :refs/tags/v1.1
+
+# post release
+#curl -vi "https://api.github.com/repos/ibmpredictiveanalytics/test/releases/tags/1.1.4?access_token=TOKEN" -X GET 
+#curl -vi "https://api.github.com/repos/ibmpredictiveanalytics/test/releases/?access_token=TOKEN" -X GET 
+#curl -vi https://api.github.com/repos/ibmpredictiveanalytics/test/releases/assets
